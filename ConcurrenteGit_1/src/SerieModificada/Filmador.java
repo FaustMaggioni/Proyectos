@@ -14,6 +14,7 @@ public class Filmador implements Runnable {
     private int id;
     public void run(){
         while(true){
+            this.filmar();
             s.agregarCapitulo(id);
         }
     }
