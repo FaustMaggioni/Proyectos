@@ -17,4 +17,7 @@ public class Filmador implements Runnable {
             s.agregarCapitulo(id);
         }
     }
+    private void filmar(){
+ 
+        Thread.sleep(3000*Math.Random()+1000);
 }
