@@ -27,7 +27,6 @@ public class Serie {
         lock1.writeLock().lock();
         System.out.println("####### Filmador "+id+" va a AGREGAR el capitulo "+cantCaps+1);
         caps.insertar("Capitulo "+cantCaps+1, cantCaps+1);
-        verCap.signalAll();
         cantCaps++;
         System.out.println("$$$$$$ Nuevo capitulo agregado!");
         lock1.writeLock().lock();
