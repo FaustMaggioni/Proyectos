@@ -43,7 +43,7 @@ public class Serie {
     public void verCapitulo(int nroSocio, int nroCapitulo) throws InterruptedException{
         lock1.readLock().lock();
         System.out.println("Socio "+nroSocio+" mirando: "+caps.recuperar(nroCapitulo));
-        Thread.sleep((long) (3000*Math.random()+1000));
         lock1.readLock().unlock();
+        Thread.sleep((long) (3000*Math.random()+1000));       
     }
 }
